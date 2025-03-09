@@ -21,8 +21,6 @@
     - [🛍️ Order Management \& History](#️-order-management--history)
     - [📊 Real-Time Order Tracking](#-real-time-order-tracking)
     - [🔒 Secure Payment Processing](#-secure-payment-processing)
-    - [💰 Promo Codes \& Discounts](#-promo-codes--discounts)
-    - [⭐ User Reviews \& Ratings](#-user-reviews--ratings)
     - [🔐 Authentication (JWT \& OAuth2)](#-authentication-jwt--oauth2)
       - [**JWT Authentication**](#jwt-authentication)
       - [**OAuth2 Authentication**](#oauth2-authentication)
@@ -126,9 +124,6 @@ Ensuring the security of customer payments is a key focus. The project integrate
 
 Customers can personalise their orders by selecting their preferred sizes, toppings, and special instructions. This level of customisation allows for a tailored experience that meets individual tastes and dietary preferences.
 
-### 6. **Promote Customer Engagement:**
-
-By enabling user reviews and ratings, the project fosters a sense of community, where customers can share their experiences and provide valuable feedback on products. This helps to continuously improve the offerings and ensures customer satisfaction.
 
 ## Features
 
@@ -217,33 +212,6 @@ Customers can securely complete their purchases using a reliable third-party pay
   - Digital wallets (Apple Pay, Google Pay)
 - **Order Confirmation:** After a successful transaction, users receive an email confirmation and receipt.
 
-### 💰 Promo Codes & Discounts
-
-**Feature:**
-Customers can apply promo codes to receive discounts during checkout.
-
-**Details:**
-
-- **Discount Validation:** The system checks if a promo code is:
-  - Valid (active within its start and end date).
-  - Eligible for the cart total (e.g., a $10-off code might require a $50+ purchase).
-  - Applicable to specific items (e.g., "Get 20% off all smoothies, but not snacks").
-- **Automatic Discount Application:** If the promo code is valid, the system deducts the discount from the total price.
-- **Error Handling:** If a code is invalid or expired, users get a clear message explaining why it cannot be applied.
-
-### ⭐ User Reviews & Ratings
-
-**Feature:**
-Customers can leave feedback on menu items by submitting a star rating and written review.
-
-**Details:**
-
-- **Rating System:** Users can assign a 1 to 5-star rating to each menu item.
-- **Review Submission:** Customers can provide comments on their experience (e.g., "Great smoothie, but a bit too sweet!").
-- **Review Storage:** All reviews are stored in the Reviews Collection, linked to both:
-  - The user who submitted the review
-  - The menu item being reviewed
-- **Public Visibility:** Reviews appear on the menu item’s page for other customers to see.
 
 ### 🔐 Authentication (JWT & OAuth2)
 
@@ -381,7 +349,6 @@ The **Merry Berry Smoothie & Açaí Shop** platform is tailored to meet the need
 🎯 **Why They Need Merry Berry:**
 
 - **Order history & quick reorder** for favorite items.
-- Access to **promo codes and discounts**.
 - **In-store pickup & delivery tracking** for added convenience.
 
 ## Tech Stack
@@ -417,23 +384,20 @@ Our Dataflow Diagram explicitly identifies and depicts the following key compone
   - **Customise Order:** This process receives "Customisation Selections" from Alice and uses this input to manage order customisation details. It provides (Customised Item Options) back to Alice.
   - **Add to Cart:** This process handles the "Add Item to Cart Request" from Alice, updating the cart items. It sends (Cart Update Confirmation) back to Alice.
   - **View Cart:** This process handles the "View Cart Request" from Alice, retrieving cart details. It provides (Cart Items & Summary) back to Alice.
-  - **Place Order:** This process handles the "Place Order Request" from Alice. It receives "Payment Information" and "Promo Code" data, interacts with the "Validate Promo Code" and "Process Payment" processes, and stores order details in the MongoDB data store. It sends (Order Confirmation) back to Alice.
-  - **Validate Promo Code:** This process receives "Promo Code" data from the "Place Order" process. It retrieves promo codes from the MongoDB data store and provides (Validation Result) back to the "Place Order" process.
+  - **Place Order:** This process handles the "Place Order Request" from Alice. It receives "Payment Information" and "Process Payment" processes, and stores order details in the MongoDB data store. It sends (Order Confirmation) back to Alice.
   - **Process Payment:** This process receives "Payment Information" from the "Place Order" process and interacts with the "Payment Gateway" to process the payment. It receives (Payment Status) from the "Payment Gateway" and provides (Payment Result) back to the "Place Order" process.
   - **Track Order Status:** This process handles the "Order Tracking Request" from Alice. It retrieves order status from the MongoDB data store and provides (Order Status Updates) back to Alice.
   - **User Authentication:** This process handles the "Auth Request [Login/Register]" from Alice, verifying user credentials against data in MongoDB. It provides (Auth Token [JWT]) back to Alice.
-  - **Submit Review:** This process handles the "Submit Review & Rating" from Alice. It stores user reviews and ratings in the MongoDB data store and provides (Review Submission Confirmation) back to Alice.
-  - **View Reviews:** This process handles the "View Reviews Request" from Alice. It retrieves product reviews from the MongoDB data store and provides (Display Product Reviews) back to Alice.
 
 - **Data Store (Data at Rest):** Represented as an open-ended rectangle, this is where the system stores persistent data. In our DFD, we have:
 
-  - **MongoDB Database:** This data store holds various collections including Menu Data, Order Details, Promo Codes, User Credentials, and User Reviews & Ratings. It serves as the central repository for the application's persistent data.
+  - **MongoDB Database:** This data store holds various collections including Menu Data, Order Details and User Credentials. It serves as the central repository for the application's persistent data.
 
 - **Data Flows (Data in Motion):** Represented as arrows, these indicate the movement of data between external entities, processes, and data stores. The arrows are labeled to clearly indicate the data being transferred. Examples include:
 
   - `Menu Item Request` (from Alice to "Browse Menu Items")
   - `Display Menu Items` (from "Browse Menu Items" to Alice)
-  - `Retrieve Menu Data` (from "Browse Menu Items" and "Validate Promo Code" and "View Reviews" to MongoDB)
+  - `Retrieve Menu Data` (from "Browse Menu Items")
   - `Customisation Selections` (from Alice to "Customise Order")
   - `Cart Update Confirmation` (from "Add to Cart" to Alice)
   - `Get Cart Details` (from "View Cart" to "Add to Cart")
@@ -445,8 +409,6 @@ Our Dataflow Diagram explicitly identifies and depicts the following key compone
   - `Review Submission Confirmation` (from "Submit Review" to Alice)
   - `Display Product Reviews` (from "View Reviews" to Alice)
   - `Store Order Details` (from "Place Order" to MongoDB)
-  - `Retrieve Promo Codes` (from "Validate Promo Code" to MongoDB)
-  - `Store User Review & Rating` (from "Submit Review" to MongoDB)
   - `Verify User Credentials` (from "User Authentication" to MongoDB)
   - `Retrieve Order Status` (from "Track Order Status" to MongoDB)
 
@@ -609,7 +571,7 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 
 ---
 
-**Feature Coverage and Completeness:** We have conducted a comprehensive review of our user stories to ensure they cover all key functionalities of the Merry Berry Smoothie & Açaí Shop application as outlined in the project objectives and features section. The user stories address core user workflows, including menu browsing, order customisation, cart management, order placement, order tracking, secure payment, promo code application, and user reviews. Furthermore, they also consider essential aspects like user authentication, responsive design, and operational needs of the shop owner. We are confident that these user stories provide a robust foundation for the development of a user-centered and feature-rich application.
+**Feature Coverage and Completeness:** We have conducted a comprehensive review of our user stories to ensure they cover all key functionalities of the Merry Berry Smoothie & Açaí Shop application as outlined in the project objectives and features section. The user stories address core user workflows, including menu browsing, order customisation, cart management, order placement, order tracking, secure payment. Furthermore, they also consider essential aspects like user authentication, responsive design, and operational needs of the shop owner. We are confident that these user stories provide a robust foundation for the development of a user-centered and feature-rich application.
 
 ## 🖼️ Wireframes: Demonstrating Iteration
 
