@@ -793,7 +793,7 @@ Similar to our development E2E testing, we conducted comprehensive manual E2E te
 - **Browsers:** Testing was performed across a range of browsers including Chrome (latest), Firefox (latest), Safari (latest), and Edge (latest) to ensure cross-browser compatibility.
 - **Operating Systems:** Testing encompassed macOS, Windows, iOS, and Android devices to validate responsiveness and functionality across different platforms.
 - **Testers:**
-    - **Internal Team Testers:** [List Team Member Names - e.g.,  Ethan Cornwill,  Team Member 2, Team Member 3]
+    - **Internal Team Testers:** [List Team Member Names - e.g.,  Ethan Cornwill,  Danilo Lannocca, Joel von Treifeldt]
     - **Client Testers:** [Client Contact Name(s) or Role(s) - e.g., Maria Rodriguez (Shop Owner),  Client Representative 1]  **<- Client Involvement - HD Criterion**
 - **Date of Testing:** 2025-03-15 to 2025-03-20 (Example - Replace with actual production testing dates)
 
