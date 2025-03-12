@@ -1,4 +1,4 @@
-```markdown
+<!-- ```markdown -->
 --- START OF FILE README.md ---
 # Merry Berry Smoothie & Açaí Shop - Full Stack Application (Combined README)
 
@@ -454,6 +454,48 @@ To ensure efficient project tracking and agile preparation for Part B, we utilis
 ![Late Stage 2](./docs/kanban/kanban_board_late_stage_2.png)
 
 These screenshots, along with the description of our Kanban standards below, provide evidence of our agile project management approach and its consistent application throughout Part A and Part B development. This methodology has not only aided in project tracking but also directly informed our sprint planning for Part B development, ensuring a smooth transition into the implementation phase.
+
+### Screenshots (Throughout Part B Documentation):
+
+#### Early Stage Frontend (Feb 22nd)
+
+![Early Stage Frontend 1](./docs/kanban/frontend/22-02/kanban_22-02.png)
+
+![Early Stage Frontend 2](./docs/kanban/frontend/22-02/kanban_all-iteration_22-02.png)
+
+![Early Stage Frontend 3](./docs/kanban/frontend/22-02/kanban_iteration-2_22-02.png)
+
+![Early Stage Frontend 4](./docs/kanban/frontend/22-02/kanban_iteration-3_22-02.png)
+
+#### Early Stage Frontend (Feb 28th)
+
+![Early Stage Frontend 5](./docs/kanban/frontend/28-02/kanban_28-02.png)
+
+![Early Stage Frontend 6](./docs/kanban/frontend/28-02/kanban_all-iteration_28-02.png)
+
+![Early Stage Frontend 7](./docs/kanban/frontend/28-02/kanban_iteration-3_28-02.png)
+
+![Early Stage Frontend 8](./docs/kanban/frontend/28-02/kanban_iteration-4_28-02.png)
+
+#### Mid Stage Frontend (Mar 5th)
+
+![Mid Stage Frontend 1](./docs/kanban/frontend/05-03/kanban_05-03.png)
+
+![Mid Stage Frontend 2](./docs/kanban/frontend/05-03/kanban_all-iteration_05-03.png)
+
+![Mid Stage Frontend 3](./docs/kanban/frontend/05-03/kanban_iteration-4_05-03.png)
+
+#### Late Stage Frontend (Mar 12th)
+
+![Late Stage Frontend 1](./docs/kanban/frontend/12-03/kanban_12-03.png)
+
+![Late Stage Frontend 2](./docs/kanban/frontend/12-03/kanban_all_12-03.png)
+
+#### Late Stage Backend (Mar 12th)
+
+![Late Stage Backend 1](./docs/kanban/backend/12-03/kanban_12-03.png)
+
+![Late Stage Backend 2](./docs/kanban/backend/12-03/kanban_all_12-03.png)
 
 ### 📋 Kanban Board Standards: Clear, Simple, and Consistently Applied
 
@@ -1052,7 +1094,7 @@ The backend implements robust authentication using JWT (JSON Web Tokens) for sta
     - `PUT /api/orders/:id` (update order status - admin action)
     - `POST /api/images/upload` (upload image - admin action)
 
-### Logout:
+### Logout
 
 - **Frontend Logout:**  Logout is handled on the frontend by removing the JWT token from `localStorage` or `sessionStorage` (or by invalidating HTTP-only cookie if used). This effectively ends the user session on the client-side.
 - **Backend Logout (Stateless):** JWT authentication is stateless. There is no explicit backend logout process required. Once the frontend discards the JWT, subsequent requests will no longer be authenticated.
@@ -1275,10 +1317,9 @@ These libraries and dependencies were carefully chosen to create a robust, perfo
 
 ## Contributors
 
-- Ethan Cornwill - [https://github.com/EthanCornwill](https://github.com/EthanCornwill)
-- [Team Member 2 Name] - [Team Member 2 GitHub Profile URL]
-- [Team Member 3 Name] - [Team Member 3 GitHub Profile URL]
-- [Team Member 4 Name] - [Team Member 4 GitHub Profile URL]
+- Ethan Cornwill - <https://github.com/EthanCornwill>
+- Danilo Lannocca - <https://github.com/danilo90lan>
+- Joel von Treifeldt - <https://github.com/jevontrei>
 
 ## Future Enhancements
 
@@ -1381,4 +1422,4 @@ This section integrates the complete content of `PartA-Docs.md` into this compre
 ...(Content of "📌 GitHub Projects Board: Kanban for Agile Project Management & Sprint Planning" section from PartA-Docs.md, including images and link to project board)
 
 --- START OF FILE PartA-Docs.md ---
-```
+<!-- ``` -->
