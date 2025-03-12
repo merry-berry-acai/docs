@@ -361,18 +361,22 @@ These wireframes are medium-fidelity and explicitly demonstrate our iterative de
 #### Home (Desktop) - Original vs. Revised
 
 <img src="./docs/wireframes/old/desktop/home.png" alt="Old Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Original Home (Desktop Example)**
 
 <img src="./docs/wireframes/new/desktop/home.png" alt="New Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Revised Home (Desktop Example)**
 
 
 #### Menu (Desktop) - Original vs. Revised
 
 <img src="./docs/wireframes/old/desktop/menu.png" alt="Old Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Original Menu (Desktop Example)**
 
 <img src="./docs/wireframes/new/desktop/menu.png" alt="New Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Revised Menu (Desktop Example)**
 
 
@@ -382,18 +386,22 @@ These wireframes are medium-fidelity and explicitly demonstrate our iterative de
 #### Home (Mobile) - Original vs. Revised
 
 <img src="./docs/wireframes/old/mobile/home.png" alt="Old Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Original Home (Mobile Example)**
 
 <img src="./docs/wireframes/new/mobile/home.png" alt="New Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Revised Home (Mobile Example)**
 
 
 #### Menu (Mobile) - Original vs. Revised
 
 <img src="./docs/wireframes/old/mobile/menu.png" alt="Old Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Original Menu (Mobile Example)**
 
 <img src="./docs/wireframes/new/mobile/menu.png" alt="New Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Revised Menu (Mobile Example)**
 
 ### Tablet Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` \& `docs/wireframes/new`)
@@ -401,18 +409,22 @@ These wireframes are medium-fidelity and explicitly demonstrate our iterative de
 #### Home (Tablet) - Original vs. Revised
 
 <img src="./docs/wireframes/old/tablet/home.png" alt="Old Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Original Home (Tablet Example)**
 
 <img src="./docs/wireframes/new/tablet/home.png" alt="New Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Revised Home (Tablet Example)**
 
 
 #### Menu (Tablet) - Original vs. Revised
 
 <img src="./docs/wireframes/old/tablet/menu.png" alt="Old Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Original Menu (Tablet Example)**
 
 <img src="./docs/wireframes/new/tablet/menu.png" alt="New Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+
 **Revised Menu (Tablet Example)**
 
 ---
