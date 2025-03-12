@@ -20,11 +20,11 @@
 
 ## Table of Contents
 
-- [Merry Berry Smoothie & Açaí Shop - Full Stack Application (Combined README)](#merry-berry-smoothie--açaí-shop---full-stack-application-combined-readme)
+- [Merry Berry Smoothie \& Açaí Shop - Full Stack Application (Combined README)](#merry-berry-smoothie--açaí-shop---full-stack-application-combined-readme)
   - [Deployed Applications and Repositories](#deployed-applications-and-repositories)
   - [Table of Contents](#table-of-contents)
   - [Project Overview](#project-overview)
-    - [🎯 Purpose of the **Merry Berry Smoothie & Açaí Shop** Project](#-purpose-of-the-merry-berry-smoothie--açaí-shop-project)
+    - [🎯 Purpose of the **Merry Berry Smoothie \& Açaí Shop** Project](#-purpose-of-the-merry-berry-smoothie--açaí-shop-project)
     - [🌟 Vision](#-vision)
     - [🏆 **Core Objectives:**](#-core-objectives)
       - [1. **Empower Healthy Eating:**](#1-empower-healthy-eating)
@@ -38,59 +38,71 @@
     - [Frontend Features](#frontend-features)
     - [Backend Features](#backend-features)
   - [Tech Stack](#tech-stack)
-    - [Frontend](#frontend-1)
-    - [Backend](#backend-1)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
     - [Design Tools](#design-tools)
     - [Tech Stack Justification](#tech-stack-justification)
   - [🗺️ Dataflow Diagram: Visualising Data Flow within the Merry Berry System (Traditional DFD)](#️-dataflow-diagram-visualising-data-flow-within-the-merry-berry-system-traditional-dfd)
     - [🔑 Key Components of our Dataflow Diagram](#-key-components-of-our-dataflow-diagram)
-  - [🏗️ Application Architecture Diagram: Layered Structure for Scalability and Maintainability](#️-application-architecture-diagram-layered-structure-for-scalability-and-maintainability-1)
-    - [📂 Layers of the Application Architecture](#-layers-of-the-application-architecture-1)
-  - [User Stories: Persona-Driven Feature Development & Refinement](#user-stories-persona-driven-feature-development--refinement)
-  - [🖼️ Wireframes: Demonstrating Iteration](#️-wireframes-demonstrating-iteration-1)
-    - [Desktop Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` \& `docs/wireframes/new`)](#desktop-wireframes-iteration-examples-full-sets-in-docswireframesold--docswireframesnew-1)
-      - [Home (Desktop) - Original vs. Revised](#home-desktop---original-vs-revised-1)
-      - [Menu (Desktop) - Original vs. Revised](#menu-desktop---original-vs-revised-1)
-    - [Mobile Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` \& `docs/wireframes/new`)](#mobile-wireframes-iteration-examples-full-sets-in-docswireframesold--docswireframesnew-1)
-      - [Home (Mobile) - Original vs. Revised](#home-mobile---original-vs-revised-1)
-      - [Menu (Mobile) - Original vs. Revised](#menu-mobile---original-vs-revised-1)
-    - [Tablet Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` \& `docs/wireframes/new`)](#tablet-wireframes-iteration-examples-full-sets-in-docswireframesold--docswireframesnew-1)
-      - [Home (Tablet) - Original vs. Revised](#home-tablet---original-vs-revised-1)
-      - [Menu (Tablet) - Original vs. Revised](#menu-tablet---original-vs-revised-1)
-  - [Git Workflow Using Git Flow](#git-workflow-using-git-flow-1)
-    - [Main Branches](#main-branches-1)
-    - [Supporting Branches](#supporting-branches-1)
-    - [Workflow](#workflow-1)
-  - [📌 GitHub Projects Board: Kanban for Agile Project Management & Sprint Planning](#-github-projects-board-kanban-for-agile-project-management--sprint-planning-1)
-    - [Screenshots (Throughout Part A Documentation):\*\*](#screenshots-throughout-part-a-documentation-1)
-      - [Early Stage (Feb 9th)](#early-stage-feb-9th-1)
-      - [Mid Stage (Feb 11th)](#mid-stage-feb-11th-1)
-      - [Late Stage (Feb 13th)](#late-stage-feb-13th-1)
-      - [Late Stage (Feb 15th)](#late-stage-feb-15th-1)
-    - [📋 Kanban Board Standards: Clear, Simple, and Consistently Applied](#-kanban-board-standards-clear-simple-and-consistently-applied-1)
-      - [✔️ Consistent Card Naming: `[Feature Area] - [Concise Task Description]`](#️-consistent-card-naming-feature-area---concise-task-description-1)
-      - [✔️ Meaningful Label Usage: Categorisation, Priority, Workload](#️-meaningful-label-usage-categorisation-priority-workload-1)
-      - [✔️ Clear Assignee Usage: Accountability](#️-clear-assignee-usage-accountability-1)
-      - [✔️ Well-Defined Kanban Workflow: Progress Tracking](#️-well-defined-kanban-workflow-progress-tracking-1)
-      - [✔️ Granular Checklists: Subtask Management](#️-granular-checklists-subtask-management-1)
-    - [🗓️ Sprint Planning for Part B: Kanban-Informed Development Sprints](#️-sprint-planning-for-part-b-kanban-informed-development-sprints-1)
-    - [🚀 Reflection: HD Project Management - Kanban Throughout \& Sprint-Ready](#-reflection-hd-project-management---kanban-throughout--sprint-ready-1)
-      - [Kanban Board Overview](#kanban-board-overview-1)
-      - [Issues List View](#issues-list-view-1)
-      - [Example Issue Detail](#example-issue-detail-1)
-      - [Link to Project Board](#link-to-project-board-1)
-  - [Testing](#testing-1)
+  - [🏗️ Application Architecture Diagram: Layered Structure for Scalability and Maintainability](#️-application-architecture-diagram-layered-structure-for-scalability-and-maintainability)
+    - [📂 Layers of the Application Architecture](#-layers-of-the-application-architecture)
+  - [User Stories: Persona-Driven Feature Development \& Refinement](#user-stories-persona-driven-feature-development--refinement)
+  - [🖼️ Wireframes: Demonstrating Iteration](#️-wireframes-demonstrating-iteration)
+    - [Desktop Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` \& `docs/wireframes/new`)](#desktop-wireframes-iteration-examples-full-sets-in-docswireframesold--docswireframesnew)
+      - [Home (Desktop) - Original vs. Revised](#home-desktop---original-vs-revised)
+      - [Menu (Desktop) - Original vs. Revised](#menu-desktop---original-vs-revised)
+    - [Mobile Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` \& `docs/wireframes/new`)](#mobile-wireframes-iteration-examples-full-sets-in-docswireframesold--docswireframesnew)
+      - [Home (Mobile) - Original vs. Revised](#home-mobile---original-vs-revised)
+      - [Menu (Mobile) - Original vs. Revised](#menu-mobile---original-vs-revised)
+    - [Tablet Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` \& `docs/wireframes/new`)](#tablet-wireframes-iteration-examples-full-sets-in-docswireframesold--docswireframesnew)
+      - [Home (Tablet) - Original vs. Revised](#home-tablet---original-vs-revised)
+      - [Menu (Tablet) - Original vs. Revised](#menu-tablet---original-vs-revised)
+  - [Git Workflow Using Git Flow](#git-workflow-using-git-flow)
+    - [Main Branches](#main-branches)
+    - [Supporting Branches](#supporting-branches)
+    - [Workflow](#workflow)
+  - [📌 GitHub Projects Board: Kanban for Agile Project Management \& Sprint Planning](#-github-projects-board-kanban-for-agile-project-management--sprint-planning)
+    - [Screenshots (Throughout Part A Documentation):\*\*](#screenshots-throughout-part-a-documentation)
+      - [Early Stage (Feb 9th)](#early-stage-feb-9th)
+      - [Mid Stage (Feb 11th)](#mid-stage-feb-11th)
+      - [Late Stage (Feb 13th)](#late-stage-feb-13th)
+      - [Late Stage (Feb 15th)](#late-stage-feb-15th)
+    - [Screenshots (Throughout Part B Documentation):](#screenshots-throughout-part-b-documentation)
+      - [Early Stage Frontend (Feb 22nd)](#early-stage-frontend-feb-22nd)
+      - [Early Stage Frontend (Feb 28th)](#early-stage-frontend-feb-28th)
+      - [Mid Stage Frontend (Mar 5th)](#mid-stage-frontend-mar-5th)
+      - [Late Stage Frontend (Mar 12th)](#late-stage-frontend-mar-12th)
+      - [Late Stage Backend (Mar 12th)](#late-stage-backend-mar-12th)
+    - [📋 Kanban Board Standards: Clear, Simple, and Consistently Applied](#-kanban-board-standards-clear-simple-and-consistently-applied)
+      - [✔️ Consistent Card Naming: `[Feature Area] - [Concise Task Description]`](#️-consistent-card-naming-feature-area---concise-task-description)
+      - [✔️ Meaningful Label Usage: Categorisation, Priority, Workload](#️-meaningful-label-usage-categorisation-priority-workload)
+      - [✔️ Clear Assignee Usage: Accountability](#️-clear-assignee-usage-accountability)
+      - [✔️ Well-Defined Kanban Workflow: Progress Tracking](#️-well-defined-kanban-workflow-progress-tracking)
+      - [✔️ Granular Checklists: Subtask Management](#️-granular-checklists-subtask-management)
+    - [🗓️ Sprint Planning for Part B: Kanban-Informed Development Sprints](#️-sprint-planning-for-part-b-kanban-informed-development-sprints)
+    - [🚀 Reflection: HD Project Management - Kanban Throughout \& Sprint-Ready](#-reflection-hd-project-management---kanban-throughout--sprint-ready)
+      - [Kanban Board Overview](#kanban-board-overview)
+      - [Issues List View](#issues-list-view)
+      - [Example Issue Detail](#example-issue-detail)
+      - [Link to Project Board](#link-to-project-board)
+  - [Testing](#testing)
     - [Testing Frameworks](#testing-frameworks)
     - [Test Structure](#test-structure)
-    - [User Testing](#user-testing-1)
+    - [User Testing](#user-testing)
       - [Development Feedback (CMP1002-5.1)](#development-feedback-cmp1002-51)
       - [Production Feedback (CMP1002-5.2)](#production-feedback-cmp1002-52)
       - [Development E2E Testing Evidence (CMP1002-5.1)](#development-e2e-testing-evidence-cmp1002-51)
+        - [Test Case 1: Order Food Flow (Development Environment)](#test-case-1-order-food-flow-development-environment)
+        - [Test Case 2: User Registration and Login Flow (Development Environment)](#test-case-2-user-registration-and-login-flow-development-environment)
       - [Production E2E Testing Evidence (CMP1002-5.2) for High Distinction](#production-e2e-testing-evidence-cmp1002-52-for-high-distinction)
-  - [Installation and Setup](#installation-and-setup-1)
+        - [Production E2E Test Case Examples (Client-Involved)](#production-e2e-test-case-examples-client-involved)
+        - [Test Case 3: Production Order Food Flow (Client \& Team Testing)](#test-case-3-production-order-food-flow-client--team-testing)
+        - [Test Case 4: Production User Registration and Login (Client \& Team Testing)](#test-case-4-production-user-registration-and-login-client--team-testing)
+      - [Formal Testing Framework and Code Coverage (CMP1002-5.3)](#formal-testing-framework-and-code-coverage-cmp1002-53)
+  - [Installation and Setup](#installation-and-setup)
     - [Prerequisites](#prerequisites)
     - [Frontend Setup](#frontend-setup)
-    - [Backend Setup](#backend-setup-1)
+    - [Backend Setup](#backend-setup)
       - [MongoDB Connection Setup](#mongodb-connection-setup)
   - [Backend API Endpoints](#backend-api-endpoints)
     - [Users](#users)
@@ -109,47 +121,49 @@
   - [Backend Middleware](#backend-middleware)
   - [Backend Error Handling](#backend-error-handling)
   - [Backend Authentication](#backend-authentication)
-    - [JWT Authentication](#jwt-authentication-1)
-    - [OAuth2 Authentication](#oauth2-authentication-1)
-    - [Secure Routes and Role-Based Access](#secure-routes-and-role-based-access-1)
-    - [Logout:](#logout-1)
-    - [Token Expiry & Refresh Tokens](#token-expiry--refresh-tokens-1)
-    - [Summary of Authentication Features](#summary-of-authentication-features-1)
-  - [Code Architecture - DRY & OO Principles](#code-architecture---dry--oo-principles)
+    - [JWT Authentication](#jwt-authentication)
+    - [OAuth2 Authentication](#oauth2-authentication)
+    - [Secure Routes and Role-Based Access](#secure-routes-and-role-based-access)
+    - [Logout](#logout)
+    - [Token Expiry \& Refresh Tokens](#token-expiry--refresh-tokens)
+    - [Summary of Authentication Features](#summary-of-authentication-features)
+  - [Code Architecture - DRY \& OO Principles](#code-architecture---dry--oo-principles)
     - [DRY (Don't Repeat Yourself) Principles](#dry-dont-repeat-yourself-principles)
     - [Object-Oriented Principles/Patterns](#object-oriented-principlespatterns)
-  - [Libraries & Dependencies](#libraries--dependencies-1)
-    - [@emotion/react & @emotion/styled](#emotionreact--emotionstyled)
+  - [Libraries \& Dependencies](#libraries--dependencies)
+    - [@emotion/react \& @emotion/styled](#emotionreact--emotionstyled)
     - [@mui/icons-material](#muiicons-material)
     - [@mui/material](#muimaterial)
-    - [@sentry/react & @sentry/vite-plugin](#sentryreact--sentryvite-plugin)
-    - [@stripe/react-stripe-js & @stripe/stripe-js](#stripereact-stripe-js--stripestripe-js)
+    - [@sentry/react \& @sentry/vite-plugin](#sentryreact--sentryvite-plugin)
+    - [@stripe/react-stripe-js \& @stripe/stripe-js](#stripereact-stripe-js--stripestripe-js)
     - [@tailwindcss/vite](#tailwindcssvite)
     - [axios](#axios)
     - [firebase](#firebase)
     - [formik](#formik)
     - [lucide-react](#lucide-react)
-    - [react](#react-1)
-  - [Contributors](#contributors-1)
-  - [Future Enhancements](#future-enhancements-1)
+    - [react](#react)
+  - [Contributors](#contributors)
+  - [Future Enhancements](#future-enhancements)
   - [High Distinction (HD) Grade Improvements](#high-distinction-hd-grade-improvements)
     - [Code Quality](#code-quality)
-    - [Project Management & Source Control](#project-management--source-control)
-    - [Application & User Interface](#application--user-interface)
-    - [Testing](#testing-2)
+    - [Project Management \& Source Control](#project-management--source-control)
+    - [Application \& User Interface](#application--user-interface)
+    - [Testing](#testing-1)
     - [Presentation](#presentation)
   - [Part A Documentation Integration](#part-a-documentation-integration)
     - [Project Overview (From Part A)](#project-overview-from-part-a)
     - [Core Objectives (From Part A)](#core-objectives-from-part-a)
     - [Features (From Part A)](#features-from-part-a)
     - [Target Audience (From Part A)](#target-audience-from-part-a)
-    - [Tech Stack & Justification (From Part A)](#tech-stack--justification-from-part-a)
+    - [Tech Stack \& Justification (From Part A)](#tech-stack--justification-from-part-a)
     - [Dataflow Diagram (DFD) (From Part A)](#dataflow-diagram-dfd-from-part-a)
     - [Application Architecture Diagram (AAD) (From Part A)](#application-architecture-diagram-aad-from-part-a)
     - [User Stories (From Part A)](#user-stories-from-part-a)
     - [Wireframes: Demonstrating Iteration (From Part A)](#wireframes-demonstrating-iteration-from-part-a)
     - [Git Workflow Using Git Flow (From Part A)](#git-workflow-using-git-flow-from-part-a)
-    - [GitHub Projects Board: Kanban for Agile Project Management & Sprint Planning (From Part A)](#github-projects-board-kanban-for-agile-project-management--sprint-planning-from-part-a)
+    - [GitHub Projects Board: Kanban for Agile Project Management \& Sprint Planning (From Part A)](#github-projects-board-kanban-for-agile-project-management--sprint-planning-from-part-a)
+
+---
 
 ## Project Overview
 
@@ -160,8 +174,6 @@
 ### 🌟 Vision
 
 To become the leading online platform empowering healthy lifestyles by providing a seamless and delightful experience for ordering nutritious smoothies and açaí bowls, fostering a community of health-conscious individuals.
-
----
 
 ### 🏆 **Core Objectives:**
 
@@ -188,6 +200,8 @@ Customers can personalise their orders by selecting their preferred sizes, toppi
 #### 6. **Promote Customer Engagement:**
 
 By enabling user reviews and ratings, the project fosters a sense of community, where customers can share their experiences and provide valuable feedback on products. This helps to continuously improve the offerings and ensures customer satisfaction.
+
+---
 
 ## Features
 
@@ -220,6 +234,8 @@ By enabling user reviews and ratings, the project fosters a sense of community, 
 - **Centralized Error Handling**: Middleware implemented for consistent and informative error responses across the API.
 - **Request Logging**: Detailed logging of API requests for monitoring and debugging purposes.
 
+---
+
 ## Tech Stack
 
 ### Frontend
@@ -248,6 +264,8 @@ By enabling user reviews and ratings, the project fosters a sense of community, 
 ### Tech Stack Justification
 
 We have strategically selected our tech stack to maximize development efficiency, application performance, and maintainability, aligning with the project's objectives and aiming for a High Distinction outcome. `React.js` was chosen for its component-based architecture, enabling modular and reusable UI elements, crucial for a dynamic user interface and responsive design. `Node.js with Express` provides a performant and scalable backend, ideal for handling asynchronous operations and real-time features required for online ordering and order management.  `MongoDB`'s NoSQL database offers schema flexibility, which is invaluable for agile development and adapting to evolving feature requirements.  The use of `Figma` for design facilitated iterative design processes and ensured a user-centric approach from the outset.  Each library and framework was chosen after careful consideration of its benefits and suitability for this project, as detailed further in the [Libraries & Dependencies](#libraries--dependencies-1) section.
+
+---
 
 ## 🗺️ Dataflow Diagram: Visualising Data Flow within the Merry Berry System (Traditional DFD)
 
@@ -330,6 +348,8 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 
 ...(User Stories content from PartA-README.md)
 
+---
+
 ## 🖼️ Wireframes: Demonstrating Iteration
 
 To showcase our iterative design process, this README provides examples of both *Original* and *Revised* wireframes for Home and Menu screens across desktop, mobile, and tablet.  The *complete sets* of Original wireframes are located in `docs/wireframes/old`, and the *Revised* wireframes are in `docs/wireframes/new`.  Reviewing both folders provides a full understanding of our design evolution.
@@ -399,6 +419,8 @@ These wireframes are medium-fidelity and explicitly demonstrate our iterative de
 
 Our iterative wireframing process, with Original and Revised examples shown above, and the full sets in `docs/wireframes/old` and `docs/wireframes/new` respectively, clearly demonstrates our commitment to exceptional planning and continuous refinement of our UI/UX design for the Merry Berry application, ensuring a user-centred and responsive experience across all devices.
 
+---
+
 ## Git Workflow Using Git Flow
 
 The Git Flow workflow is used to manage source code, branching, and releases. Here's a description of the workflow:
@@ -430,6 +452,8 @@ Our Git Flow workflow ensures a structured and collaborative development process
 - **Branching Strategy:** Our structured branching strategy with Git Flow efficiently manages code complexity, facilitates parallel development, and ensures a stable and well-maintained codebase throughout the project lifecycle.
 
 ![GitFlow Diagram](./docs/git-flow.png)
+
+---
 
 ## 📌 GitHub Projects Board: Kanban for Agile Project Management & Sprint Planning
 
@@ -569,6 +593,8 @@ Our Kanban board, evidenced by dated screenshots and consistently applied standa
 - [GitHub Projects Board](https://github.com/orgs/merry-berry-acai/projects/3) - Part A & Overall Project Management
 - [Backend Part B Board](https://github.com/orgs/merry-berry-acai/projects/4) - Backend Development Sprint Board
 - [Frontend Part B Board](https://github.com/orgs/merry-berry-acai/projects/5) - Frontend Development Sprint Board
+
+---
 
 ## Testing
 
@@ -1030,6 +1056,8 @@ The backend utilizes various middleware functions for request processing, securi
 - `adminMiddleware`:  Authorization middleware that checks if the authenticated user has an 'admin' role, protecting admin-only routes.
 - `errorHandlingMiddleware`:  Centralized error handling middleware that catches errors, logs them, and sends consistent error responses to the client.
 
+---
+
 ## Backend Error Handling
 
 The backend implements centralized error handling using the `errorHandlingMiddleware`. This middleware catches errors thrown in route handlers or other middleware, logs the error details, and sends a standardized error response to the client. Error responses typically include:
@@ -1040,6 +1068,8 @@ The backend implements centralized error handling using the `errorHandlingMiddle
 - `stack`: (In development mode only) The error stack trace for debugging.
 
 Specific error types are handled and mapped to appropriate HTTP status codes and messages to provide informative feedback to the frontend and users.
+
+---
 
 ## Backend Authentication
 
@@ -1117,6 +1147,8 @@ The backend implements robust authentication using JWT (JSON Web Tokens) for sta
 ✔ **Firebase Integration (for OAuth2)** provides a foundation for future third-party login implementation.
 ✔ **Token Expiry** enhances security by limiting the lifespan of access tokens.
 ✔ **Refresh Tokens (Planned)** will improve user experience by minimizing re-logins while maintaining security.
+
+---
 
 ## Code Architecture - DRY & OO Principles
 
@@ -1315,11 +1347,15 @@ The Merry Berry Smoothie & Açaí Shop application leverages a carefully selecte
 
 These libraries and dependencies were carefully chosen to create a robust, performant, maintainable, and feature-rich application, aligning with best practices in modern web development and contributing significantly to the project's overall quality and potential for High Distinction.
 
+---
+
 ## Contributors
 
 - Ethan Cornwill - <https://github.com/EthanCornwill>
 - Danilo Lannocca - <https://github.com/danilo90lan>
 - Joel von Treifeldt - <https://github.com/jevontrei>
+
+---
 
 ## Future Enhancements
 
@@ -1337,6 +1373,8 @@ While the Merry Berry Smoothie & Açaí Shop application in its current state pr
 - **Admin Dashboard Improvements:**  Enhance the admin dashboard with more comprehensive order management features, sales analytics, menu item management tools, and user management capabilities.  Develop visual dashboards and reporting features to provide shop owners with valuable business insights.
 
 These future enhancements are planned to build upon the solid foundation of the current Merry Berry application, continuously improving user experience, expanding functionality, and solidifying its position as a leading online platform for healthy food ordering.
+
+---
 
 ## High Distinction (HD) Grade Improvements
 
@@ -1372,6 +1410,8 @@ This README and the Merry Berry Smoothie & Açaí Shop application project docum
 - **Complex Code Explanation (Functionality) & (Challenges) (CMP1002-6.1 & CMP1002-6.2 - HD Preparation):** While presentation-specific, the [Code Architecture - DRY & OO Principles](#code-architecture---dry--oo-principles) and [Testing](#testing-1) sections highlight areas of complex code (e.g., payment processing, authentication, error handling) and challenges encountered (e.g., production debugging, environment parity), implicitly preparing the ground for demonstrating complex code explanation and challenge resolution during the presentation, supporting overall HD achievement.
 
 This enhanced README, along with the documented project, provides a comprehensive and compelling case for High Distinction, explicitly addressing and providing evidence for all relevant HD criteria across code quality, project management, application functionality, user interface, testing, and task delegation.
+
+---
 
 ## Part A Documentation Integration
 
