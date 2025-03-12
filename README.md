@@ -427,7 +427,6 @@ These wireframes are medium-fidelity and explicitly demonstrate our iterative de
 
 **Revised Menu (Tablet Example)**
 
----
 
 Our iterative wireframing process, with Original and Revised examples shown above, and the full sets in `docs/wireframes/old` and `docs/wireframes/new` respectively, clearly demonstrates our commitment to exceptional planning and continuous refinement of our UI/UX design for the Merry Berry application, ensuring a user-centred and responsive experience across all devices.
 
@@ -641,7 +640,7 @@ This structured approach facilitates maintainability of the test suite, allows f
 
 ### User Testing
 
-To guarantee a high-quality user experience and rigorously validate application functionality, we conducted extensive user testing throughout the development lifecycle. This testing included both development environment testing and production environment testing, involving client feedback and iterative improvements.  Detailed feedback logs and testing documentation are available in [Feedback.MD](Feedback.MD).
+To guarantee a high-quality user experience and rigorously validate application functionality, we conducted extensive user testing throughout the development lifecycle. This testing included both development environment testing and production environment testing, involving client feedback and iterative improvements. Detailed feedback logs and testing documentation are available in [USER-TESTING.md](./docs/USER-TESTING.md).
 
 #### Development Feedback (CMP1002-5.1)
 
