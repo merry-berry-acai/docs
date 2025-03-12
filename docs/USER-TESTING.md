@@ -107,6 +107,7 @@ Creates a new menu item with validated data (name, base price, category, etc.). 
 
 **Screenshot**:  
 ![NEW ITEM](./user-testing-screenshots/create%20new%20item.png)
+![NEW ITEM](./user-testing-screenshots/ADDING%20ITEM.png)
 ![NEW ITEM-FAILED](./user-testing-screenshots/CREATE%20ITEM%20-%20CATEGORY%20VALIDATION%20FAILED.png)
 ![NEW ITEM-FAILED](./user-testing-screenshots/CREATE%20ITEM%20-%20TOPPING%20VALIDATION%20FAILED.png)
 
@@ -158,3 +159,38 @@ Fetches all available toppings from the database.
 ![ALL TOPPINGS](./user-testing-screenshots/GET%20ALL%20TOPPINGS2.png)
 ![ALL TOPPINGS](./user-testing-screenshots/GET%20ALL%20TOPPINGS.png)
 
+## Route: POST create payment intent
+
+**URL**:  
+`http://localhost:5000/payment`
+
+**Method**:  
+`POST`
+
+**Purpose**:  
+Creates a payment intent using Stripe to initiate the payment process.
+
+**Response**:
+
+**Success (200)**: Returns the clientSecret for the payment intent.
+
+```json
+
+{
+  "clientSecret": "pi_1234_secret_5678"
+}
+```
+![PAYMENT INTENT](./user-testing-screenshots/payment%20succesfull2.png)
+
+## Route: POST store successful payment
+
+**URL**:  
+`http://localhost:5000/payment/store`
+
+**Method**:  
+`POST`
+
+**Purpose**:  
+Stores the successful payment information.
+
+![PAYMENT SUCCESFULL](./user-testing-screenshots/payment%20succesfull.png)
